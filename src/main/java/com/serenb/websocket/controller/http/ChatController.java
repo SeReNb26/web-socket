@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/chat1")
-public class TestChatController {
+@RequestMapping("/chat")
+public class ChatController {
     @GetMapping
     public String getChatPage() {
-        return "test-chat";
+        return "chat";
     }
 }

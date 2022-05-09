@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/../css/style-reset.css" rel="stylesheet">
+    <link href="/../css/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/../js/app.js"></script>
 </head>
 <body>
-$END$
+<header>
+    <div>
+        <h1>Welcome to online chatting site!</h1>
+    </div>
+</header>
+
+<main>
+    <div>
+        <h3>To start, enter your nickname and press the start button :)</h3>
+    </div>
+    <form method="get" action="/chat">
+        <label>
+            <input id="nickname" type="text" name="nickname" required>
+            <button type="submit" class="btn btn-default" id="start">
+                Start
+            </button>
+        </label>
+    </form>
+</main>
+
+<footer>
+    <!-- ... -->
+</footer>
 </body>
 </html>

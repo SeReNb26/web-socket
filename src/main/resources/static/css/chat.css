@@ -1,0 +1,96 @@
+.chat {
+    height: 80%;
+    width: 80%;
+    position: fixed;
+    border: 2px solid pink;
+    border-collapse: collapse;
+    margin: 5% 10%;
+}
+
+.chat *{
+    position: relative;
+    width: 100%;
+}
+
+.black-border {
+    border: 1px solid #000000;
+}
+
+.chat-head {
+    height: 10%;
+}
+
+.chat-name {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    position: absolute;
+}
+
+.salmon {
+    background: rgba(250, 128, 114, 0.7);
+}
+
+.chat-body {
+    height: 83%;
+    border: 2px solid #000000;
+    overflow-y: auto;
+}
+
+.sender-message {
+    margin-top: 10px;
+    margin-left: 55%;
+    text-align: right;
+    max-width: 43%;
+}
+
+.sender-message span {
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: lightblue;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.receiver-message {
+    margin-right: 55%;
+    max-width: 43%;
+    margin-top: 10px;
+    float: right;
+}
+
+.receiver-message span {
+    border-radius: 25px;
+}
+
+.receiver-message-nickname {
+    font-size: 18px;
+    color: #a8f08d;
+}
+
+.receiver-message-content {
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+    word-wrap: break-word;
+}
+
+.welcome-message {
+    text-align: center;
+    color: #cccccc;
+    font-size: 17px;
+}
+
+.chat-foot {
+    height: 7%;
+}
+
+.chat-foot .message {
+    width: 80%;
+    height: 100%;
+}
+
+.chat-foot .send {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}

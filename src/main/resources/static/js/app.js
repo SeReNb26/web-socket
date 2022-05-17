@@ -13,10 +13,11 @@ function connect() {
 function showMessage(message) {
     let content = message.content;
     let htmlClass = message.htmlClass;
+    const sender = message.sender;
     if (htmlClass === 'welcome') {
         $("#chat-body").append("<div class='welcome-message'>" + content + " joined to chat</div>");
     } else {
-        if (sessionStorage.getItem("nickname") === message.sender) {
+        if (sessionStorage.getItem("nickname") === sender) {
             $("#chat-body").append("<div class='sender-message'>" +
                     "<span class='sender-message-content'>" +
                         content +
@@ -25,7 +26,7 @@ function showMessage(message) {
         } else {
             $("#chat-body").append("<div class='receiver-message'>" +
                     "<span class='receiver-message-nickname'>" +
-                        sessionStorage.getItem("nickname") + ":" +
+                        sender + ":" +
                     "</span>" +
                     "</br>" +
                     "<span class='receiver-message-content'>" +

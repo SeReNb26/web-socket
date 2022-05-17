@@ -79,6 +79,6 @@ $(function () {
     });
     $("#start").click(function () {
         sessionStorage.setItem("nickname", document.querySelector("#nickname").value);
-        location.href = "/chat";
+        location.href = "/../chat";
     });
 });
